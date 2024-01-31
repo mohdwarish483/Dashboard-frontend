@@ -19,9 +19,7 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import user1 from "../../../../Assets/Images/Warish.jpeg";
-import user2 from "../../../../Assets/Images/Warish.jpeg";
-import user3 from "../../../../Assets/Images/Warish.jpeg";
-import user4 from "../../../../Assets/Images/Warish.jpeg";
+
 
 export const CustomersCard = () => {
   return (

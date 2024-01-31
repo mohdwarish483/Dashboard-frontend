@@ -1,4 +1,4 @@
-import { Heading, Stack } from "@chakra-ui/react";
+import {Stack } from "@chakra-ui/react";
 
 import "../../App.css";
 import { Sidebar } from "../Sidebar";

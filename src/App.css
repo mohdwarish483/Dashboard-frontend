@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
+:root {
+  /* fonts */
+  --font-inter: Inter;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-xl: 20px;
+  --font-size-3xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-base: 16px;
+  --font-size-5xl: 24px;
+  --font-size-29xl: 48px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* Colors */
+  --off-white: #f6f6f3;
+  --light-gray: #f1f1f1;
+  --white: #fff;
+  --light-orange: #fff7e8;
+  --dark-orange: #734a00;
+  --mid-gray: #7d7d7d;
+  --black: #131313;
+  --red: #eb5050;
+  --dark-gray: #454545;
+  --orange: #ffa500;
+  --dark-red: #b01212;
+  --mid-orange: #ffcd71;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+  --gap-xs: 12px;
+  --gap-11xs: 2px;
 
-.App-link {
-  color: #61dafb;
-}
+  /* Paddings */
+  --padding-base: 16px;
+  --padding-5xl: 24px;
+  --padding-xs: 12px;
+  --padding-7xs: 6px;
+  --padding-5xs: 8px;
+  --padding-xl: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* Border radiuses */
+  --br-base: 16px;
+  --br-9xs: 4px;
+  --br-5xl: 24px;
 }

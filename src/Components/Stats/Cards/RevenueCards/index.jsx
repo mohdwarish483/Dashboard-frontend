@@ -14,7 +14,7 @@ export const RevenueCard = () => {
   return (
     <Card
       width={"100%"}
-      h={"100%"}
+      h={"240px"}
       p={"24px"}
       bg={"white"}
       borderRadius={"16px"}
@@ -22,11 +22,17 @@ export const RevenueCard = () => {
       variant={"simple"}
     >
       <CardHeader p={0}>
-        <Heading fontSize={"20px"} fontWeight={"semibold"} pb={"16px"}>
+        <Heading fontSize={"20px"} fontWeight={"bold"}>
           Revenues
         </Heading>
       </CardHeader>
-      <CardBody p={0} flexDirection={"column"} gap={"8px"}>
+      <CardBody
+        p={0}
+        flexDirection={"column"}
+        gap={"8px"}
+        justifyContent={"center"}
+        display={"flex"}
+      >
         <HStack
           alignItems={"center"}
           gap={"8px"}

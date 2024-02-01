@@ -5,6 +5,9 @@ import { LostDealsCards } from "./Cards/DealsCards";
 import { GoalCards } from "./Cards/GoalCards";
 import { CustomersCard } from "./Cards/CustomersCards";
 import { Graph } from "./Graph";
+import { ChatsCard } from "./Cards/ChatsCards";
+import { TopStatsCard } from "./Cards/TopStatsCard";
+import { NewDealsCard } from "./Cards/DealsCards/NewDealsCard";
 
 export const Stats = () => {
   return (
@@ -23,11 +26,11 @@ export const Stats = () => {
         <CustomersCard />
         <Graph />
       </HStack>
-      <HStack
-        width={"100%"}
-        justifyContent={"flex-start"}
-        gap={"16px"}
-      ></HStack>
+      <HStack width={"100%"} justifyContent={"flex-start"} gap={"16px"}>
+        <ChatsCard />
+        <TopStatsCard />
+        <NewDealsCard />
+      </HStack>
     </VStack>
   );
 };

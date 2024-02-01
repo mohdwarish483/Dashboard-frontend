@@ -14,19 +14,25 @@ export const LostDealsCards = () => {
   return (
     <Card
       width={"100%"}
-      h={"100%"}
       p={"24px"}
+      h={"240px"}
       bg={"white"}
       borderRadius={"16px"}
       gap={"8px"}
       variant={"simple"}
     >
       <CardHeader p={0}>
-        <Heading fontSize={"20px"} fontWeight={"semibold"} pb={"16px"}>
+        <Heading fontSize={"20px"} fontWeight={"bold"}>
           Lost Deals
         </Heading>
       </CardHeader>
-      <CardBody p={0} flexDirection={"column"} gap={"8px"}>
+      <CardBody
+        p={0}
+        flexDirection={"column"}
+        gap={"8px"}
+        justifyContent={"center"}
+        display={"flex"}
+      >
         <HStack
           alignItems={"center"}
           gap={"8px"}

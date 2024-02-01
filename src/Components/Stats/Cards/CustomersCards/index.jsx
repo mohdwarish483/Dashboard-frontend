@@ -18,8 +18,10 @@ import {
   IconStar,
 } from "@tabler/icons-react";
 import React from "react";
-import user1 from "../../../../Assets/Images/Warish.jpeg";
-
+import user1 from "../../../../Assets/Images/Avatar (1).png";
+import user2 from "../../../../Assets/Images/Avatar (2).png";
+import user3 from "../../../../Assets/Images/Avatar (3).png";
+import user4 from "../../../../Assets/Images/Warish.jpeg";
 
 export const CustomersCard = () => {
   return (
@@ -29,9 +31,10 @@ export const CustomersCard = () => {
       bg={"white"}
       borderRadius={"16px"}
       variant={"simple"}
+      h={"464px"}
     >
       <CardHeader pt={"24px"} px={"24px"}>
-        <Heading fontSize={"20px"} fontWeight={"semibold"}>
+        <Heading fontSize={"20px"} fontWeight={"bold"}>
           Customers
         </Heading>
       </CardHeader>
@@ -42,10 +45,15 @@ export const CustomersCard = () => {
           _hover={{ bg: "#FFF7E8" }}
           borderRadius={"16px"}
           p={"16px"}
+          cursor={"pointer"}
         >
           <HStack gap={"12px"}>
             <Avatar src={user1} size={"sm"} />
-            <VStack justifyContent={"center"} gap={"0"}>
+            <VStack
+              justifyContent={"center"}
+              gap={"0"}
+              alignItems={"flex-start"}
+            >
               <Text fontWeight={"bold"}>Chris Friedkly</Text>
               <Text>Supermarket Villanova</Text>
             </VStack>
@@ -69,12 +77,17 @@ export const CustomersCard = () => {
           _hover={{ bg: "#FFF7E8" }}
           borderRadius={"16px"}
           p={"16px"}
+          cursor={"pointer"}
         >
           <HStack gap={"12px"}>
-            <Avatar src={user1} size={"sm"} />
-            <VStack justifyContent={"center"} gap={"0"}>
+            <Avatar src={user2} size={"sm"} />
+            <VStack
+              justifyContent={"center"}
+              gap={"0"}
+              alignItems={"flex-start"}
+            >
               <Text fontWeight={"bold"}>Chris Friedkly</Text>
-              <Text>Supermarket Villanova</Text>
+              <Text>Wallmart</Text>
             </VStack>
           </HStack>
           <HStack gap={"8px"} justifyContent={"space-between"}>
@@ -96,12 +109,17 @@ export const CustomersCard = () => {
           _hover={{ bg: "#FFF7E8" }}
           borderRadius={"16px"}
           p={"16px"}
+          cursor={"pointer"}
         >
           <HStack gap={"12px"}>
-            <Avatar src={user1} size={"sm"} />
-            <VStack justifyContent={"center"} gap={"0"}>
+            <Avatar src={user3} size={"sm"} />
+            <VStack
+              justifyContent={"center"}
+              gap={"0"}
+              alignItems={"flex-start"}
+            >
               <Text fontWeight={"bold"}>Maggie Jhonson</Text>
-              <Text>Supermarket Villanova</Text>
+              <Text>New york finest fruits</Text>
             </VStack>
           </HStack>
           <HStack gap={"8px"} justifyContent={"space-between"}>
@@ -123,12 +141,17 @@ export const CustomersCard = () => {
           _hover={{ bg: "#FFF7E8" }}
           borderRadius={"16px"}
           p={"16px"}
+          cursor={"pointer"}
         >
           <HStack gap={"12px"}>
-            <Avatar src={user1} size={"sm"} />
-            <VStack justifyContent={"center"} gap={"0"}>
+            <Avatar src={user4} size={"sm"} />
+            <VStack
+              justifyContent={"center"}
+              gap={"0"}
+              alignItems={"flex-start"}
+            >
               <Text fontWeight={"bold"}>Gael Harry</Text>
-              <Text>Supermarket Villanova</Text>
+              <Text>Singapore new valley</Text>
             </VStack>
           </HStack>
           <HStack gap={"8px"} justifyContent={"space-between"}>

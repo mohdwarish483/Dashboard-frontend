@@ -1,4 +1,4 @@
-import {Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 
 import "../../App.css";
 import { Sidebar } from "../Sidebar";
@@ -9,9 +9,7 @@ export const Dashboard = () => {
       sx={{
         width: "100%",
         position: "relative",
-        borderRadius: "32px",
         bg: "#f6f6f3",
-        height: "922px",
         overflow: "hidden",
         display: "flex",
         flexDirection: "row",

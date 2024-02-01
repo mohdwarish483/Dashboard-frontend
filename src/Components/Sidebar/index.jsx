@@ -11,7 +11,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import { MdOutlineSearch } from "react-icons/md";
 import { Logo } from "./OrangeFarmLogo";
 import user from "../../Assets/Images/Warish.jpeg";
 
@@ -21,6 +20,7 @@ import {
   IconDatabaseExport,
   IconLogout,
   IconMessageCircle,
+  IconSearch,
   IconSettings,
   IconUsers,
   IconWorld,
@@ -53,12 +53,14 @@ export const Sidebar = () => {
       >
         {/* <Image src="../../Assets/Images/Ellipse 1.svg" /> */}
         <Logo />
-        <Heading fontWeight={"bold"}>OrangeFarm</Heading>
+        <Heading fontWeight={"bold"} fontSize={"32px"}>
+          OrangeFarm
+        </Heading>
       </HStack>
       <VStack width={"100%"}>
         <InputGroup width={"100%"}>
           <InputLeftElement pointerEvents="none">
-            <MdOutlineSearch color="#7D7D7D" />
+            <IconSearch color="#7D7D7D" size={"16px"} />
           </InputLeftElement>
           <Input
             type="search"
@@ -88,43 +90,75 @@ export const Sidebar = () => {
           alignItems={"flex-start"}
           gap={"24px"}
         >
-          <HStack width={"100%"} justifyContent={"flex-start"}>
-            <IconLayoutDashboard size={"16px"} color="#7D7D7D" />
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
+            <IconLayoutDashboard
+              size={"16px"}
+              color="#7D7D7D"
+              cursor={"default"}
+            />
             <Text color={"#131313"} fontSize={"16px"}>
               Dashboard
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconUsers size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Customers
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconClipboardData size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               All Reports
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconWorld size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Geography
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconMessageCircle size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Conversations
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconBasket size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Deals
             </Text>
           </HStack>
-          <HStack width={"100%"} justifyContent={"flex-start"}>
+          <HStack
+            width={"100%"}
+            justifyContent={"flex-start"}
+            cursor={"default"}
+          >
             <IconDatabaseExport size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Export
@@ -132,7 +166,7 @@ export const Sidebar = () => {
           </HStack>
         </VStack>
         <VStack width={"100%"} alignItems={"flex-start"} gap={"24px"}>
-          <HStack>
+          <HStack cursor={"default"}>
             <Avatar src={user} size={"md"} />
             <VStack>
               <Text fontWeight={"bold"}>Mohd Warish</Text>
@@ -141,13 +175,13 @@ export const Sidebar = () => {
               </Tag>
             </VStack>
           </HStack>
-          <HStack>
+          <HStack cursor={"default"}>
             <IconSettings size={"16px"} color="#7D7D7D" />
             <Text color={"#131313"} fontSize={"16px"}>
               Settings
             </Text>
           </HStack>
-          <HStack>
+          <HStack cursor={"default"}>
             <IconLogout size={"16px"} color="#B01212" />
             <Text fontWeight={"bold"} color={"#B01212"}>
               Logout

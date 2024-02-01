@@ -9,7 +9,15 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Card, CardBody, CardHeader, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  CardBody,
+  CardHeader,
+  Heading,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
 
 export const GrowthCard = () => {
   const [graphData, setGraphData] = useState([]);
@@ -22,6 +30,7 @@ export const GrowthCard = () => {
         `${process.env.REACT_APP_SERVER}/api/graph-data`
       );
 
+      console.log("calling response ", response);
       setGraphData(response.data);
     } catch (error) {
       setError(error.message);
@@ -42,22 +51,35 @@ export const GrowthCard = () => {
   };
 
   return (
-    <Card variant="simple" width={"100%"} px={"24px"}>
-      <CardHeader>
-        <Heading>Growth</Heading>
+    <Card
+      width={"100%"}
+      h={"100%"}
+      p={0}
+      bg={"white"}
+      borderRadius={"16px"}
+      gap={"8px"}
+      variant={"simple"}
+    >
+      <CardHeader px={"24px"}>
+        <Heading fontSize={"20px"} fontWeight={"bold"}>
+          Profit
+        </Heading>
       </CardHeader>
-      <CardBody color={"black"}>
-        {loading && <p>Loading...</p>}
-        {error && <p>Error: {error}</p>}
+      <CardBody color={"black"} p={"0px 28px 24px 0px"}>
+        <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
+          {loading && <Spinner color="#FFCD71" />}
+          {error && <Text>Error: {error}</Text>}
+        </Box>
+
         {graphData.length > 0 && (
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={200}>
             <AreaChart
               data={graphData}
               margin={{
-                top: 5,
-                right: 20,
-                left: 20,
-                bottom: 5,
+                top: 0,
+                right: 5,
+                left: 0,
+                bottom: 0,
               }}
             >
               <defs>

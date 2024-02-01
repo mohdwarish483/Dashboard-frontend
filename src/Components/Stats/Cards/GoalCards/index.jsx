@@ -15,7 +15,7 @@ export const GoalCards = () => {
   return (
     <Card
       width={"100%"}
-      h={"100%"}
+      h={"240px"}
       p={"24px"}
       bg={"white"}
       borderRadius={"16px"}
@@ -26,7 +26,7 @@ export const GoalCards = () => {
       <CardHeader p={0}>
         <Heading
           fontSize={"20px"}
-          fontWeight={"semibold"}
+          fontWeight={"bold"}
           width={"100%"}
           textAlign={"center"}
         >
@@ -38,6 +38,8 @@ export const GoalCards = () => {
         flexDirection={"column"}
         gap={"8px"}
         alignItems={"center"}
+        justifyContent={"center"}
+        display={"flex"}
       >
         <CircularProgress value={"84"} color="#FFCD71" size={"120px"}>
           <CircularProgressLabel>
@@ -47,7 +49,7 @@ export const GoalCards = () => {
       </CardBody>
       <CardFooter p={0} flexDir={"row"} alignItems={"center"} gap={"8px"}>
         <Text color={"#734A00"} fontSize={"14px"}>
-          All Deals
+          All Goals
         </Text>
         <IconArrowRight color="#734A00" size={"14px"} />
       </CardFooter>
